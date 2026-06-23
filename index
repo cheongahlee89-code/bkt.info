@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKT 인포그래픽</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Pretendard) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen pb-12">
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-blue-600 to-indigo-800 text-white py-16 px-6 text-center rounded-b-[3rem] shadow-xl relative overflow-hidden">
+        <!-- Decorative background elements -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <i class="fa-solid fa-brain text-9xl absolute -top-10 -left-10 transform rotate-12"></i>
+            <i class="fa-solid fa-chart-line text-9xl absolute -bottom-10 -right-10 transform -rotate-12"></i>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <div class="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-semibold tracking-wider mb-6 backdrop-blur-sm">
+                데이터 기반 맞춤형 교육
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+                학생의 <span class="text-yellow-300">'진짜 실력'</span>을 꿰뚫어 보는 AI
+            </h1>
+            <p class="text-xl md:text-2xl font-light opacity-90">
+                베이지안 지식 추적 (BKT: Bayesian Knowledge Tracing)
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 -mt-8 relative z-20">
+        
+        <!-- Section 1: Definition -->
+        <section class="glass-card rounded-2xl shadow-lg p-8 mb-10 border-t-4 border-indigo-500 transition-transform duration-300 hover:-translate-y-1">
+            <h2 class="text-2xl font-bold mb-4 text-slate-800">
+                <i class="fa-solid fa-microchip text-indigo-500 mr-2"></i> BKT(베이지안 지식 추적)란?
+            </h2>
+            <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-100 flex items-start gap-4">
+                <div class="text-indigo-400 text-3xl hidden md:block">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <p class="text-lg text-slate-700 leading-relaxed font-medium">
+                    BKT는 학생이 수업 중 문제를 푸는 과정에서 남긴 <b>정오답(O/X) 데이터</b>를 바탕으로, 눈에 보이지 않는 학생의 <b>'진짜 지식 상태(Mastery, 숙달도)'</b>를 실시간 확률로 추론하는 AI 알고리즘입니다. <br>단순한 정답률을 넘어, 학생이 개념을 우연히 찍어서 맞췄는지 진짜로 이해했는지 과학적으로 진단합니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: What can we do? -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-center text-slate-800">
+                <i class="fa-solid fa-bolt text-yellow-500 mr-2"></i> BKT를 쓰면 교실에서 무엇을 할 수 있나요?
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6 items-stretch">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col items-center text-center transition-all hover:shadow-lg">
+                    <div class="bg-blue-100 text-blue-600 w-20 h-20 flex items-center justify-center rounded-full text-4xl mb-6">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Dynamic 실시간 역량 측정</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        별도의 진단평가나 시험을 위해 <b>추가 시간을 낼 필요가 없습니다.</b> 평소 수업 시간에 에듀테크로 수집되는 형성평가 데이터만으로도 학생의 성취기준별 숙달도가 <b>다이내믹하게(Dynamic) 즉시 업데이트</b>됩니다.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col items-center text-center transition-all hover:shadow-lg">
+                    <div class="bg-green-100 text-green-600 w-20 h-20 flex items-center justify-center rounded-full text-4xl mb-6">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">지필평가 없는 과목도 측정 가능</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        자유학기제, 예체능, 진로 과목 등 <b>지필고사를 보지 않는 과목</b>이라도, 수업 중 누적된 과정 중심의 데이터만 있다면 학생의 학습 궤적을 객관적인 수치로 측정하고 명확한 피드백을 제공할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Parameters (Brief) -->
+        <section class="glass-card rounded-2xl shadow-lg p-8 mb-10 border-2 border-slate-100">
+            <h2 class="text-xl font-bold mb-6 text-center text-slate-800">
+                <i class="fa-solid fa-sliders text-slate-400 mr-2"></i> (참고) AI가 실력을 추리하는 4가지 기준
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
+                    <div class="text-green-500 text-2xl mb-2"><i class="fa-solid fa-seedling"></i></div>
+                    <h4 class="font-bold text-slate-700">Prior (사전 지식)</h4>
+                    <p class="text-xs text-slate-500 mt-1">풀기 전 이미 아는 확률</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
+                    <div class="text-blue-500 text-2xl mb-2"><i class="fa-solid fa-rocket"></i></div>
+                    <h4 class="font-bold text-slate-700">Learn (학습률)</h4>
+                    <p class="text-xs text-slate-500 mt-1">새롭게 깨우칠 확률</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
+                    <div class="text-yellow-500 text-2xl mb-2"><i class="fa-solid fa-dice"></i></div>
+                    <h4 class="font-bold text-slate-700">Guess (추측)</h4>
+                    <p class="text-xs text-slate-500 mt-1">몰라도 찍어 맞힐 확률</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
+                    <div class="text-red-500 text-2xl mb-2"><i class="fa-solid fa-person-falling"></i></div>
+                    <h4 class="font-bold text-slate-700">Slip (실수)</h4>
+                    <p class="text-xs text-slate-500 mt-1">아는데 실수로 틀릴 확률</p>
+                </div>
+            </div>
+            <p class="text-center text-sm text-slate-400 mt-6">
+                * 이 파라미터들은 시스템(AI)이 데이터를 통해 자동으로 계산합니다. <br class="hidden md:block">선생님은 복잡한 계산 없이 도출된 <b>'최종 도달도'</b>만 확인하고 학생 지도에 집중하시면 됩니다.
+            </p>
+        </section>
+
+        <!-- Section 4: Synergy -->
+        <section class="glass-card rounded-2xl shadow-lg p-8 border-2 border-indigo-100">
+            <h2 class="text-2xl font-bold mb-8 text-center text-slate-800">
+                <i class="fa-solid fa-handshake-angle text-indigo-600 mr-2"></i> 완벽한 역할 분담: 시스템과 교사의 시너지
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- AI Box -->
+                <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-100 relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-10">
+                        <i class="fa-solid fa-robot text-9xl"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="bg-indigo-600 text-white text-sm font-bold inline-block px-3 py-1 rounded-full mb-3">에듀테크 & AI</div>
+                        <h3 class="text-xl font-bold text-indigo-900 mb-2">반복 학습과 데이터 분석</h3>
+                        <p class="text-indigo-800 leading-relaxed">
+                            학생들의 문제 풀이 데이터를 실시간으로 수집하고 BKT로 계산하여, 교사에게 학생별/기준별 <b>학업 결손 진단 결과</b>를 대시보드로 제공합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Teacher Box -->
+                <div class="bg-orange-50 p-6 rounded-xl border border-orange-100 relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-10">
+                        <i class="fa-solid fa-chalkboard-user text-9xl"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="bg-orange-500 text-white text-sm font-bold inline-block px-3 py-1 rounded-full mb-3">선생님</div>
+                        <h3 class="text-xl font-bold text-orange-900 mb-2">인간 중심(Human-oriented) 피드백</h3>
+                        <p class="text-orange-800 leading-relaxed">
+                            분석된 데이터를 바탕으로 숙달도가 부족한 학생을 적기에 찾아내어, 오개념을 교정하고 정서적 교감을 나누는 <b>직접적이고 따뜻한 개입</b>을 수행합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center mt-12 text-slate-500 text-sm">
+        <p>데이터 기반 기초학력 안전망 구축 프로젝트</p>
+    </footer>
+
+</body>
+</html>
